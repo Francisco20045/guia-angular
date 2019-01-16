@@ -10,7 +10,7 @@
 <body style="background: #ebebeb;" >
     <div class="container" ng-controller="ctrlLogin">
         
-       
+       {{photos.data.alpha2Code}}
 
 
         <!-- Login -->
@@ -30,7 +30,9 @@
                     </div>
                 </form>
                 <hr/>
-                <div class="bg-warning" style="padding:15px;" ng-show="mostrarError" >Su usuario y/o clave son incorrectos</div>
+                <div class="bg-warning" style="padding:15px;" ng-show="mostrarError" >
+                    {{mensaje}}
+                </div>
             </div>
         </div>
 
